@@ -1,3 +1,5 @@
+using BusinessLayerBL.Interface;
+using BusinessLayerBL.Service;
 using Microsoft.Extensions.Logging;
 using NLog;
 using NLog.Extensions.Logging;
@@ -12,6 +14,7 @@ logger.Info("Application is starting...");
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IGreetingBL, GreetingBL>();
 
 
 var app = builder.Build();
@@ -32,6 +35,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
-
-

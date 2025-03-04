@@ -13,3 +13,5 @@ C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\bin\Debug\n
 C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\bin\Debug\net6.0\RepositoryLayer.pdb
 C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\obj\Debug\net6.0\BusinessLayer.csproj.AssemblyReference.cache
 C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\obj\Debug\net6.0\Business.EA331CBA.Up2Date
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\bin\Debug\net6.0\ModelLayer.dll
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\bin\Debug\net6.0\ModelLayer.pdb

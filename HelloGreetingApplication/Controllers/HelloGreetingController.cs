@@ -1,3 +1,4 @@
+using BusinessLayerBL.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
 using NLog;
@@ -13,10 +14,29 @@ namespace HelloGreetingApplication.Controllers
     [Route("[controller]")]
     public class HelloGreetingController : ControllerBase
     {
+
+        public IGreetingBL _greet;
+        public HelloGreetingController(IGreetingBL greet)
+        {
+            _greet = greet;
+
+        }
+
+        [HttpGet]
+        [Route("GetHello")]
+        public string GetHello()
+        {
+            return _greet.SimpleGreeting();
+        }
+
+
+
+
+
         /// <summary>
         /// Logs captured by logger instance
         /// </summary>
-        
+
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
         /// <summary>
@@ -29,7 +49,7 @@ namespace HelloGreetingApplication.Controllers
         {
             logger.Info("Get request recieved");
 
-            ResponseModel<string> responseModel = new ResponseModel<string>();
+            ResponseModel<string> responseModel = new ResponseModel<string>();  
             try
             {
                 

@@ -7,41 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "ModelLayer/1.0.0": {
-        "dependencies": {
-          "BusinessLayer": "1.0.0",
-          "RepositoryLayer": "1.0.0"
-        },
         "runtime": {
           "ModelLayer.dll": {}
-        }
-      },
-      "BusinessLayer/1.0.0": {
-        "dependencies": {
-          "RepositoryLayer": "1.0.0"
-        },
-        "runtime": {
-          "BusinessLayer.dll": {}
-        }
-      },
-      "RepositoryLayer/1.0.0": {
-        "runtime": {
-          "RepositoryLayer.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ModelLayer/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "BusinessLayer/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "RepositoryLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

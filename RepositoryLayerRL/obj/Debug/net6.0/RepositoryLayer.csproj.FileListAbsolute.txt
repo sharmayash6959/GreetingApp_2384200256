@@ -9,3 +9,7 @@ C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug
 C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\refint\RepositoryLayer.dll
 C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayer.pdb
 C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\ref\RepositoryLayer.dll
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\bin\Debug\net6.0\ModelLayer.dll
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\bin\Debug\net6.0\ModelLayer.pdb
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayer.csproj.AssemblyReference.cache
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\Reposito.A0A61804.Up2Date
