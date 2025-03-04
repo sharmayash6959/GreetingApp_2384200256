@@ -1,0 +1,11 @@
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\bin\Debug\net6.0\RepositoryLayer.deps.json
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\bin\Debug\net6.0\RepositoryLayer.dll
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\bin\Debug\net6.0\RepositoryLayer.pdb
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayer.AssemblyInfoInputs.cache
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayer.AssemblyInfo.cs
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayer.dll
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\refint\RepositoryLayer.dll
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayer.pdb
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\ref\RepositoryLayer.dll

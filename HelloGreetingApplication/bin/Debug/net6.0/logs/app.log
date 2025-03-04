@@ -1,0 +1,19 @@
+2025-03-04 12:05:29.4473|INFO|Program|This is an info message
+2025-03-04 12:05:29.6004|ERROR|Program|An error occurred
+2025-03-04 12:29:45.7370|INFO|Program|This is an info message
+2025-03-04 12:29:45.8503|ERROR|Program|An error occurred
+2025-03-04 12:30:10.6595|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Get request recieved
+2025-03-04 12:30:36.1295|INFO|Program|This is an info message
+2025-03-04 12:30:36.3379|ERROR|Program|An error occurred
+2025-03-04 12:40:38.2914|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Get request recieved
+2025-03-04 12:42:49.6301|INFO|HelloGreetingApplication.Program|Application is starting...
+2025-03-04 12:43:08.7415|INFO|HelloGreetingApplication.Controllers.HelloGreetingController|Get request recieved
+2025-03-04 12:53:13.2522 INFO Application is starting...
+2025-03-04 12:53:40.8094 INFO Get request recieved
+2025-03-04 12:56:50.0092 INFO POST request recieved with key: string, value: string
+2025-03-04 13:12:33.5052 INFO Application is starting...
+2025-03-04 13:12:51.2767 INFO Get request recieved
+2025-03-04 13:13:06.8989 INFO POST request recieved with key: string, value: string
+2025-03-04 13:13:23.1590 INFO PUT request recieved. Updating greeting to : string, string
+2025-03-04 13:13:52.7404 INFO PATCH request recieved. Modifying greeting with: string, string
+2025-03-04 13:15:20.4650 INFO DELETE request recieved. Removing greeting for key: string, value: string

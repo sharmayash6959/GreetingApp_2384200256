@@ -1,0 +1,11 @@
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\bin\Debug\net6.0\BusinessLayerBL.deps.json
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\bin\Debug\net6.0\BusinessLayerBL.dll
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\bin\Debug\net6.0\BusinessLayerBL.pdb
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\obj\Debug\net6.0\BusinessLayerBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\obj\Debug\net6.0\BusinessLayerBL.AssemblyInfoInputs.cache
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\obj\Debug\net6.0\BusinessLayerBL.AssemblyInfo.cs
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\obj\Debug\net6.0\BusinessLayerBL.csproj.CoreCompileInputs.cache
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\obj\Debug\net6.0\BusinessLayerBL.dll
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\obj\Debug\net6.0\refint\BusinessLayerBL.dll
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\obj\Debug\net6.0\BusinessLayerBL.pdb
+C:\Users\sharm\source\repos\HelloGreetingApplication\BusinessLayerBL\obj\Debug\net6.0\ref\BusinessLayerBL.dll

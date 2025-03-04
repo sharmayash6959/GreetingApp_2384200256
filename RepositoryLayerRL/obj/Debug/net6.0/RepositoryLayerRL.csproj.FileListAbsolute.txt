@@ -1,0 +1,4 @@
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayerRL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayerRL.AssemblyInfoInputs.cache
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayerRL.AssemblyInfo.cs
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayerRL.csproj.CoreCompileInputs.cache
