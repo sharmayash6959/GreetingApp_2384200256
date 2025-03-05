@@ -7,6 +7,9 @@ using NLog;
 
 namespace HelloGreetingApplication.Controllers
 {
+
+    
+
     /// <summary>
     /// Class providing API for HelloGreeting
     /// </summary>
@@ -15,6 +18,21 @@ namespace HelloGreetingApplication.Controllers
     public class HelloGreetingController : ControllerBase
     {
 
+        [HttpGet("Greeting3")]
+        public IActionResult SimpleGreeting(string? firstName, string? lastName)
+        {
+            logger.Info($"Get request received with Firstname: {firstName}, Lastname: {lastName}");
+
+            string message = _greet.SimpleGreeting(firstName, lastName);
+
+            ResponseModel<string> responseModel = new ResponseModel<string>()
+            {
+                Success = true,
+                Message = "Greet Message generated",
+                Data = message
+            };
+            return Ok(responseModel);
+        }
         public IGreetingBL _greet;
         public HelloGreetingController(IGreetingBL greet)
         {
@@ -24,12 +42,7 @@ namespace HelloGreetingApplication.Controllers
 
         [HttpGet]
         [Route("GetHello")]
-        public string GetHello()
-        {
-            return _greet.SimpleGreeting();
-        }
-
-
+        public string GetHello(string firstName, string lastName) => _greet.SimpleGreeting(firstName, lastName);
 
 
 
