@@ -1,13 +1,15 @@
 ﻿using BusinessLayerBL.Interface;
+using ModelLayer.Model;
+using RepositoryLayer.Service;
+using RepositoryLayer.UserEntity;
+using RepositoryLayerRL.Interface;
 
 
 namespace BusinessLayerBL.Service
 {
     public class GreetingBL : IGreetingBL
     {
-        public GreetingBL()
-        {
-        }
+        
 
         public string SimpleGreeting(string? firstName = null, string? lastName = null)
         {
@@ -26,11 +28,27 @@ namespace BusinessLayerBL.Service
             else
             {
                 return "Hello World";
+            } 
+        }
+
+        private readonly IGreetingRL _greetingRL;
+
+        public GreetingBL(IGreetingRL greetingRL)
+        {
+            _greetingRL = greetingRL ?? throw new ArgumentNullException(nameof(greetingRL));
+        }
+
+        public GreetingEntity SaveGreeting(RequestModel request)
+        {
+            if (request == null)
+            {
+                throw new ArgumentNullException(nameof(request), "Greeting data cannot be null.");
             }
             
-            
+            return _greetingRL.SaveGreeting(request); 
         }
-        
+
+
     }
-    
+
 }

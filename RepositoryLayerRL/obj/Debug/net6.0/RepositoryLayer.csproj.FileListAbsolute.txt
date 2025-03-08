@@ -13,3 +13,5 @@ C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\bin\Debug
 C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\bin\Debug\net6.0\ModelLayer.pdb
 C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayer.csproj.AssemblyReference.cache
 C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\Reposito.A0A61804.Up2Date
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\bin\Debug\net6.0\RepositoryLayer.runtimeconfig.json
+C:\Users\sharm\source\repos\HelloGreetingApplication\RepositoryLayerRL\obj\Debug\net6.0\RepositoryLayer.genruntimeconfig.cache

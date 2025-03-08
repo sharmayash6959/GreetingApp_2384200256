@@ -34,14 +34,16 @@ namespace HelloGreetingApplication.Controllers
             return Ok(responseModel);
         }
         public IGreetingBL _greet;
-        public HelloGreetingController(IGreetingBL greet)
+        
+        public HelloGreetingController(ILogger<HelloGreetingController> logger,IGreetingBL greet, IGreetingBL greetingBL)
         {
             _greet = greet;
+            _greetingBL = greetingBL;
 
         }
 
         [HttpGet]
-        [Route("GetHello")]
+        [Route("GetHello1")]
         public string GetHello(string firstName, string lastName) => _greet.SimpleGreeting(firstName, lastName);
 
 
@@ -57,7 +59,7 @@ namespace HelloGreetingApplication.Controllers
         /// </summary>
         /// <returns>"Hello, World!"</returns>
         [HttpGet]
-        [Route("Get method created")]
+        [Route("Get method created2")]
         public IActionResult Get()
         {
             logger.Info("Get request recieved");
@@ -81,6 +83,43 @@ namespace HelloGreetingApplication.Controllers
             return BadRequest(responseModel);
         }
 
+        /// <summary>
+        /// Save greeting to database for UC4
+        /// </summary>
+        /// <param name="requestModel"></param>
+        /// <returns>the data that is provided by user with user id[key]</returns>
+        private readonly IGreetingBL _greetingBL;
+
+        
+
+        /// <summary>
+        /// Saves a greeting message to the database.
+        /// </summary>
+        /// <param name="greeting">The greeting data from the client.</param>
+        /// <returns>Returns HTTP 200 OK if successful, otherwise BadRequest.</returns>
+        [HttpPost("save")]
+        public IActionResult SaveGreeting([FromBody] RequestModel request)
+        {
+            if (request.value == null)
+            {
+                return BadRequest("Greeting data cannot be null.");
+            }
+
+            try
+            {
+                var savedGreet = _greetingBL.SaveGreeting(request);
+                return Ok(new ResponseModel<string>
+                {
+                    Success = true,
+                    Message = "Greeting saved successfully!" ,
+                    Data = $"Id : {savedGreet.Id}, Message : { savedGreet.Message}"
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Error = "Internal Server Error", Details = ex.Message });
+            }
+        }
 
         /// <summary>
         /// Post method to add data
@@ -196,7 +235,35 @@ namespace HelloGreetingApplication.Controllers
             }
         }
 
+        /// <summary>
+        /// Get method to get a Greeting Message
+        /// </summary>
+        /// <returns>"Hello, World!"</returns>
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult GetGreetingById(int id)
+        {
+            //logger.Info("Get request recieved");
+
+            //ResponseModel<string> responseModel = new ResponseModel<string>();
+            //try
+            //{
+
+            //    responseModel.Success = true;
+            //    responseModel.Message = "Hello to Greeting App API Endpoint";
+            //    responseModel.Data = "Hello, World!";
+            //    return Ok(responseModel);
+            //}
+
+            //catch (Exception ex)
+            //{
+            //    responseModel.Success = false;
+            //    responseModel.Message = "Here is an exception";
+            //    responseModel.Data = "Exception occured";
+            //}
+            return Ok(id);
+        }
+
     }
 
 }
-
