@@ -48,7 +48,10 @@ namespace BusinessLayerBL.Service
             return _greetingRL.SaveGreeting(request); 
         }
 
-
+        public string GetGreetingById(int id)
+        {
+            return _greetingRL.GetGreetingById(id);
+        }
     }
 
 }

@@ -21,6 +21,16 @@ namespace RepositoryLayer.Service
             _dbContext = dbContext;
         }
 
+        public string GetGreetingById(int id)
+        {
+            var greeting = _dbContext.AllGreetings.FirstOrDefault(g => g.Id == id);
+            if (greeting == null)
+            {
+                return "Greeting not found"; // or handle accordingly if you want to return a different response or throw an exception
+            }
+            return greeting.Message;
+        }
+
         public GreetingEntity SaveGreeting(RequestModel request)
         {
             var greeting = new GreetingEntity {Message = request.value};

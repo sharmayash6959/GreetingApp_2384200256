@@ -243,26 +243,42 @@ namespace HelloGreetingApplication.Controllers
         [Route("{id}")]
         public IActionResult GetGreetingById(int id)
         {
-            //logger.Info("Get request recieved");
+            logger.Info("Get request received");
 
-            //ResponseModel<string> responseModel = new ResponseModel<string>();
-            //try
-            //{
+            var responseModel = new ResponseModel<string>();
 
-            //    responseModel.Success = true;
-            //    responseModel.Message = "Hello to Greeting App API Endpoint";
-            //    responseModel.Data = "Hello, World!";
-            //    return Ok(responseModel);
-            //}
+            try
+            {
+                // Get the greeting message by ID
+                var result = _greetingBL.GetGreetingById(id);
 
-            //catch (Exception ex)
-            //{
-            //    responseModel.Success = false;
-            //    responseModel.Message = "Here is an exception";
-            //    responseModel.Data = "Exception occured";
-            //}
-            return Ok(id);
+                // Check if the result is null or empty (if applicable)
+                if (result == null)
+                {
+                    responseModel.Success = false;
+                    responseModel.Message = "Greeting not found.";
+                    responseModel.Data = null;
+                    return Ok(responseModel);
+                }
+
+                // If everything goes well, return the result
+                responseModel.Success = true;
+                responseModel.Message = "Greeting retrieved successfully.";
+                responseModel.Data = result; // Assign the actual result here
+                return Ok(responseModel);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                logger.Error("Error occurred: " + ex.Message, ex);
+
+                responseModel.Success = false;
+                responseModel.Message = "An error occurred while processing your request.";
+                responseModel.Data = null; // It's better to return null or a default value here
+                return StatusCode(500, responseModel); // Return internal server error
+            }
         }
+
 
     }
 
